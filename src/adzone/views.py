@@ -12,6 +12,7 @@ from django.http import HttpResponseRedirect
 
 from adzone.models import AdBase, AdClick
 
+
 def ad_view(request, id):
     """
     Record the click in the database, then redirect to ad url

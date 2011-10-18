@@ -5,6 +5,10 @@ A instace of AdBase is passed to this tag.
 
 {% endcomment %}
 
+{% if ad.scriptad %}
+    {{ ad.scriptad.content|safe }}
+{% endif %}
+
 {% if ad.textad %}
     <div class="ad_text">
         <p><a target="_blank" href="{{ ad.get_absolute_url }}">{{ ad.textad.content }}</a></p>

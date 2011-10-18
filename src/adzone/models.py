@@ -116,6 +116,10 @@ class AdClick(models.Model):
         verbose_name_plural = 'Ad Clicks'
 
 # Example Ad Types
+class ScriptAd(AdBase):
+    """ A script advert, eg google adsense"""
+    content = models.TextField()
+
 class TextAd(AdBase):
     """ A most basic, text based advert """
     content = models.TextField()
